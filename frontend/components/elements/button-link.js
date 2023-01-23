@@ -1,9 +1,10 @@
 import classNames from "classnames"
-import PropTypes from "prop-types"
+import PropTypes, { string } from "prop-types"
 import { buttonLinkPropTypes } from "utils/types"
 import CustomLink from "./custom-link"
 
 const ButtonContent = ({ button, appearance, compact }) => {
+  console.log("received appearance ", appearance, button)
   return (
     <div
       className={classNames(

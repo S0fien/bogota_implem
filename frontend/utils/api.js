@@ -131,6 +131,28 @@ export async function getPageData({ slug, locale, preview }) {
                       ...FileParts
                     }
                   }
+                  ... on ComponentSectionsCard {
+                    id
+                    title
+                    content
+                    button_text
+                    picture {
+                      ...FileParts
+                    }
+                  }                  
+                  ... on ComponentSectionsImagesGallery {
+                    id
+                  }
+                  ... on ComponentSectionsKeyFigures {
+                    id
+                    key_figure {
+                      content
+                      figure
+                      picture {
+                      ...FileParts
+                      }
+                    }
+                  }
                   ... on ComponentSectionsFeatureColumnsGroup {
                     id
                     features {

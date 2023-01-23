@@ -10,11 +10,14 @@ import "@/styles/index.css"
 const MyApp = ({ Component, pageProps }) => {
   // Extract the data we need
   const { global } = pageProps
-  if (global == null) {
+
+  if (!global) {
     return <ErrorPage statusCode={404} />
   }
 
-  const { metadata, favicon, metaTitleSuffix } = global.attributes
+  // const { metadata, favicon, metaTitleSuffix } = global.attributes
+  const { metadata, favicon, metaTitleSuffix } =
+    global.attributes || global.data.attributes
 
   return (
     <>
@@ -22,7 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <link
           rel="shortcut icon"
-          href={getStrapiMedia(favicon.data.attributes.url)}
+          href={getStrapiMedia(favicon.data?.attributes?.url)}
         />
       </Head>
       {/* Global site metadata */}
@@ -31,15 +34,17 @@ const MyApp = ({ Component, pageProps }) => {
         title="Page"
         description={metadata.metaDescription}
         openGraph={{
-          images: Object.values(
-            metadata.shareImage.data.attributes.formats
-          ).map((image) => {
-            return {
-              url: getStrapiMedia(image.url),
-              width: image.width,
-              height: image.height,
-            }
-          }),
+          images: metadata.shareImage?.data?.attributes?.formats
+            ? Object.values(metadata.shareImage?.data?.attributes?.formats).map(
+                (image) => {
+                  return {
+                    url: getStrapiMedia(image.url),
+                    width: image.width,
+                    height: image.height,
+                  }
+                }
+              )
+            : null,
         }}
         twitter={{
           cardType: metadata.twitterCardType,

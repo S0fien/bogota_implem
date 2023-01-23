@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_slices_images_galeries",
+  "info": {
+    "name": "ImagesGallery",
+    "displayName": "Images Gallery",
+    "icon": "heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kjlkjlkjlkj": {
+      "type": "string"
+    },
+    "pictures": {
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -8,6 +8,9 @@ import TestimonialsGroup from "@/components/sections/testimonials-group"
 import RichText from "./sections/rich-text"
 import Pricing from "./sections/pricing"
 import LeadForm from "./sections/lead-form"
+import ImagesGallery from "./sections/images-gallery"
+import Card from "./sections/card"
+import KeyFigures from "@/components/sections/key-figures"
 
 // Map Strapi sections to section components
 const sectionComponents = {
@@ -15,6 +18,9 @@ const sectionComponents = {
   ComponentSectionsLargeVideo: LargeVideo,
   ComponentSectionsFeatureColumnsGroup: FeatureColumnsGroup,
   ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,
+  ComponentSectionsCard: Card,
+  ComponentSectionsImagesGallery: ImagesGallery,
+  ComponentSectionsKeyFigures: KeyFigures,
   ComponentSectionsBottomActions: BottomActions,
   ComponentSectionsTestimonialsGroup: TestimonialsGroup,
   ComponentSectionsRichText: RichText,

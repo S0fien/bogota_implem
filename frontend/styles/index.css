@@ -48,3 +48,20 @@ html {
   display: inline-block;
   margin-left: 0.5em;
 }
+
+@media ( max-width: 768px) {
+  .images-gallery > div:nth-child(n+5) {
+    display: none;
+  }
+  .features-columns-group > div:nth-child(n+5) {
+    display: none;
+  }
+}
+
+#nav-contact-container a div, .custom-rounded a div {
+  border-radius: 24px 0px;
+}
+
+.container {
+  max-width: 1440px;
+}

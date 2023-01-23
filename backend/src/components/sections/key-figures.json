@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_key_figures",
+  "info": {
+    "displayName": "Key Figures"
+  },
+  "options": {},
+  "attributes": {
+    "key_figure": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.key-figure"
+    }
+  }
+}

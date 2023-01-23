@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pictures",
+  "info": {
+    "singularName": "picture",
+    "pluralName": "pictures",
+    "displayName": "pictures",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "isInsta": {
+      "type": "boolean"
+    }
+  }
+}

@@ -5,7 +5,8 @@
     "singularName": "page",
     "pluralName": "pages",
     "displayName": "Page",
-    "name": "page"
+    "name": "page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -48,7 +49,10 @@
         "sections.large-video",
         "sections.rich-text",
         "sections.pricing",
-        "sections.lead-form"
+        "sections.lead-form",
+        "sections.images-gallery",
+        "sections.card",
+        "sections.key-figures"
       ],
       "pluginOptions": {
         "i18n": {
@@ -59,7 +63,7 @@
     "slug": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string",
