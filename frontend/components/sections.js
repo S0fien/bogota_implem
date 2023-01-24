@@ -11,12 +11,14 @@ import LeadForm from "./sections/lead-form"
 import ImagesGallery from "./sections/images-gallery"
 import Card from "./sections/card"
 import KeyFigures from "@/components/sections/key-figures"
+import OurClients from "@/components/sections/our-clients"
 
 // Map Strapi sections to section components
 const sectionComponents = {
   ComponentSectionsHero: Hero,
   ComponentSectionsLargeVideo: LargeVideo,
   ComponentSectionsFeatureColumnsGroup: FeatureColumnsGroup,
+  ComponentSectionsOurClients: OurClients,
   ComponentSectionsFeatureRowsGroup: FeatureRowsGroup,
   ComponentSectionsCard: Card,
   ComponentSectionsImagesGallery: ImagesGallery,

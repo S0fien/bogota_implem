@@ -52,7 +52,8 @@
         "sections.lead-form",
         "sections.images-gallery",
         "sections.card",
-        "sections.key-figures"
+        "sections.key-figures",
+        "sections.our-clients"
       ],
       "pluginOptions": {
         "i18n": {

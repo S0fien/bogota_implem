@@ -114,6 +114,12 @@ export async function getPageData({ slug, locale, preview }) {
                       type
                       url
                     }
+                    left_picture {
+                      ...FileParts
+                    }
+                    right_picture {
+                      ...FileParts
+                    }
                   }
                   ... on ComponentSectionsHero {
                     id
@@ -157,11 +163,18 @@ export async function getPageData({ slug, locale, preview }) {
                     id
                     features {
                       id
-                      description
                       icon {
                         ...FileParts
                       }
-                      title
+                    }
+                  }
+                  ... on ComponentSectionsOurClients {
+                    id
+                    client {
+                      id
+                      icon {
+                        ...FileParts
+                      }
                     }
                   }
                   ... on ComponentSectionsFeatureRowsGroup {
